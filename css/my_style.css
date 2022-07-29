@@ -1,0 +1,1463 @@
+/* IMPORT */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;0,800;1,300&display=swap');
+
+/* IMPORT */
+
+
+/* ==================== GLOBAL STYLE START ==================== */
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f6f6f6;
+    padding-top: 150px;
+    overflow-x: hidden;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    border-color: none;
+    box-shadow: none;
+    outline: 0 none;
+}
+
+.brown-color {
+    background: #927C66;
+}
+
+.cream-color {
+    background: #A18A6F;
+}
+
+.grey-color {
+    background: #5F5F65;
+}
+
+.green-color {
+    background: #767761;
+}
+
+.darkgreen-color {
+    background: #767761;
+}
+
+.lightgreen-color {
+    background: #889796;
+}
+
+.fosforgreen-color {
+    color: #1FAD4E;
+}
+
+.fosforgreen-bgcolor {
+    background: #1FAD4E;
+}
+
+.blue-color {
+    color: #346EA7;
+}
+
+.blue-bgcolor {
+    background: #346EA7;
+}
+
+.text-dark {
+    text-decoration: none;
+}
+
+.progress {
+    height: 7px;
+}
+
+
+/* Navbar Style Start */
+
+.navbar {
+    background-color: #fff;
+    flex-direction: column;
+    box-shadow: rgba(33, 35, 38, 0.2) 0px 10px 10px -10px;
+    transition: 0.5s;
+}
+
+.navbar .navbar-brand img {
+    transition: 0.4s;
+    height: 60px;
+}
+
+.navbar.sticky .navbar-brand img {
+    height: 45px;
+}
+
+.navbar .navbar-top {
+    padding: 5px 0px;
+    width: 100%;
+    background-color: #FAFAFA;
+    transition: 0.4s;
+}
+
+.navbar.sticky .navbar-top {
+    padding: 0px 0px;
+}
+
+.navbar .navbar-alt {
+    transition: 0.4s;
+    padding: 15px 0px !important;
+}
+
+.navbar.sticky .navbar-alt {
+    padding: 5px 0px !important;
+}
+
+.navbar .navbar-top ul {
+    padding: 5px 0;
+    font-size: 15px;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar-top ul span {
+    color: rgb(211, 208, 208);
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.navbar .navbar-top ul li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: grey;
+}
+
+.navbar .navbar-top ul li:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    color: #346EA7;
+}
+
+.navbar .navbar-top ul .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .navbar-top ul .icon i {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    color: grey;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.5s;
+}
+
+.navbar .navbar-top ul .icon i:hover {
+    cursor: pointer;
+    background-color: #346EA7;
+    color: #fff;
+}
+
+.navbar .nav-item .nav-link {
+    color: #000 !important;
+    font-size: 14px;
+    margin: 0 10px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar .nav-item .nav-link:hover {
+    transition: 0.3s;
+    color: #346EA7 !important;
+}
+
+@media(max-width:1000px) {
+    .navbar .navbar-top ul {
+        justify-content: center;
+    }
+    .navbar .navbar-top ul li {
+        display: none;
+    }
+    .navbar .navbar-top ul .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar .navbar-top span {
+        display: none;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+        margin-top: 0;
+        display: flex;
+    }
+    .navbar .nav-item .nav-link:hover {
+        cursor: pointer;
+    }
+    .navbar .nav-item:hover .nav-link {
+        color: #fff;
+    }
+    .navbar .dropdown-menu.fade-up {
+        top: 180%;
+        right: 0%;
+    }
+    .navbar .nav-item:hover .dropdown-menu {
+        transition: .3s;
+        opacity: 1;
+        visibility: visible;
+        top: 100%;
+        right: 0%;
+        transform: rotateX(0deg);
+    }
+    .navbar .fade-up {
+        padding: 20px;
+    }
+    .navbar .fade-up li {
+        padding: 5px;
+    }
+    .navbar .fade-up .dropdown-item {
+        padding: 5px;
+        transition: 0.5s;
+    }
+    .navbar .fade-up .dropdown-item:hover {
+        background-color: transparent !important;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+    }
+}
+
+
+/* Navbar Style End */
+
+
+/* Footer Style Start */
+
+footer {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+footer li a {
+    transition: all 0.3s;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+footer li:hover a {
+    color: #1FAD4E !important;
+}
+
+footer li i {
+    font-size: 18px;
+}
+
+#footer-top {
+    background-color: #ECECEC;
+}
+
+#footer-top .col-6 {
+    padding: 18px;
+    display: grid;
+    gap: 32px;
+    justify-content: center;
+    text-align: center;
+    color: #284343;
+    transition: all .4s;
+}
+
+#footer-top .col-6:hover {
+    cursor: pointer;
+    color: #C7B56F;
+}
+
+#footer-top .col-6 i {
+    font-size: 40px;
+}
+
+#footer-top .col-6 p {
+    margin: 0;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-alt {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+/* Footer Style End */
+
+
+/* ==================== GLOBAL STYLE END ==================== */
+
+
+/* ==================== HOME PAGE STYLE START ==================== */
+
+
+/* Home Slider Style Start */
+
+.my-slider {
+    margin-top: 0px;
+    font-family: montserrat;
+}
+
+.my-slider img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.bg-light {
+    background-color: transparent !important;
+}
+
+.carousel-inner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+}
+
+.carousel-caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    z-index: 10;
+}
+
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.carousel-caption a {
+    text-transform: uppercase;
+    text-decoration: none;
+    background: darkorange;
+    padding: 10px 30px;
+    display: inline-block;
+    color: #000;
+    margin-top: 15px;
+}
+
+.carousel-caption a:hover {
+    transition: 0.3s;
+    background: #fff;
+    color: darkorange;
+}
+
+@media(max-width:700px) {
+    .carousel-caption {
+        justify-content: flex-end;
+        margin-bottom: 0px;
+    }
+    .carousel-caption h5 {
+        font-size: 20px;
+        letter-spacing: 1.8px;
+        margin-top: 25px;
+    }
+    .carousel-caption p {
+        width: 80%;
+        margin: auto;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .carousel-caption a {
+        text-transform: uppercase;
+        text-decoration: none;
+        background: darkorange;
+        padding: 5px 15px;
+        display: inline-block;
+        color: #000;
+        margin-top: 15px;
+    }
+    .carousel-caption a:hover {
+        transition: 0.3s;
+        background: #fff;
+        color: darkorange;
+    }
+}
+
+
+/* Home Slider Style End */
+
+
+/* Owl One Style Start */
+
+#owl-one img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+#owl-one .item {
+    box-shadow: rgb(0 0 0 / 5%) 0px 3px 5px 0px
+}
+
+#owl-one .owl-theme .owl-dots {
+    margin-top: 30px;
+}
+
+#owl-one .owl-theme .owl-dots .owl-dot span {
+    transition: all 0.5s;
+}
+
+#owl-one .owl-theme .owl-dots .owl-dot span:hover {
+    background-color: black;
+    transform: scale(1.1);
+}
+
+#owl-one .owl-theme .owl-dots .owl-dot.active span {
+    background-color: black;
+    transform: scale(1.1);
+}
+
+#owl-one .card-body {
+    display: grid;
+    gap: 16px;
+}
+
+#owl-one .card-footer {
+    text-align: right;
+    background-color: #fff;
+}
+
+#owl-one .card-footer {
+    text-align: right;
+    background-color: #fff;
+}
+
+
+/* Owl One Style End */
+
+
+/* Owl Two Style Start */
+
+#owl-two {
+    height: 600px;
+    position: relative;
+}
+
+#owl-two::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #000, transparent);
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+}
+
+#owl-two::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+#owl-two img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+#owl-two .container {
+    height: 100%;
+    display: grid;
+}
+
+#owl-two .text-section {
+    display: table;
+    max-width: 550px;
+    z-index: 1;
+}
+
+#owl-two .text {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 30px;
+    color: #fff;
+}
+
+
+/* Owl Two Sytle End */
+
+
+/* Owl Three Style Start */
+
+#owl-three .card {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#owl-three .card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+#owl-three .card .card-title {
+    color: #495464 !important;
+}
+
+#owl-three .card .card-body {
+    height: 250px;
+    padding: 24px;
+    display: grid;
+    align-content: space-between;
+    text-align: center;
+    background-color: #FAFAFA !important;
+}
+
+#owl-three .card .card-body h4,
+#owl-three .card .card-body h5 {
+    max-height: 130px;
+    overflow: hidden;
+}
+
+.button-and-date {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button-and-date span {
+    font-size: 14px;
+    color: #495464;
+}
+
+@media(max-width:500px) {
+    .button-and-date {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .button-and-date span {
+        margin-top: 15px;
+    }
+}
+
+#owl-three .card .card-body a {
+    justify-self: start;
+    padding: 10px 28px;
+    border-radius: 24px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    background-color: #495464;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#owl-three .card .card-body a:hover {
+    transition: 0.5s;
+    background-color: #fff;
+    color: black;
+}
+
+#owl-three .owl-theme .owl-dots {
+    margin-top: 30px;
+}
+
+#owl-three .owl-theme .owl-dots .owl-dot span {
+    transition: all 0.5s;
+}
+
+#owl-three .owl-theme .owl-dots .owl-dot span:hover {
+    background-color: black;
+    transform: scale(1.1);
+}
+
+#owl-three .owl-theme .owl-dots .owl-dot.active span {
+    background-color: black;
+    transform: scale(1.1);
+}
+
+
+/* Owl Three Style End */
+
+
+/* Project Style Start */
+
+#project .card {
+    padding: 32px;
+}
+
+#project .card-body {
+    padding: 0;
+}
+
+#project .my-button {
+    width: 100%;
+    padding: 18px;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+#project .my-button:hover {
+    color: #000;
+}
+
+
+/* Project Style End */
+
+
+/* Blog Style start */
+
+#blog video {
+    width: 100%;
+    height: 400px;
+}
+
+#blog .item {
+    display: grid;
+    gap: 16px;
+}
+
+#blog .text {
+    display: grid;
+    gap: 16px;
+}
+
+#blog .paragraf {
+    float: left;
+    width: 100%;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.6em;
+    height: 4.8em;
+    overflow: hidden;
+}
+
+#blog .owl-carousel-five .owl-nav {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+}
+
+@media(min-width:767px) {
+    #blog .owl-carousel-five .owl-nav {
+        position: absolute;
+        left: 0;
+        bottom: -50px;
+    }
+}
+
+#blog .owl-carousel-five .owl-nav .owl-prev,
+#blog .owl-carousel-five .owl-nav .owl-next {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px 0 0;
+    border: 1px solid rgba(0, 0, 0, .04);
+}
+
+#blog .owl-carousel-five .owl-nav .owl-prev:hover,
+#blog .owl-carousel-five .owl-nav .owl-next:hover {
+    background-color: #284343 !important;
+    color: #fff;
+}
+
+#blog .owl-carousel-five .owl-nav .owl-prev.focus,
+#blog .owl-carousel-five .owl-nav .owl-next.focus {
+    background-color: #284343 !important;
+    color: #fff;
+}
+
+
+/* Blog Style End */
+
+
+/* ==================== HOME PAGE STYLE END ==================== */
+
+
+/* ==================== DONATİON DETAİL PAGE START ==================== */
+
+.parallax {
+    background: #000;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(https://maras46.net/wp-content/uploads/2021/04/C-2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content {
+    padding: 20% 0;
+}
+
+#description-donation {
+    margin-top: -10%;
+}
+
+#description-donation img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+#description-donation .form {
+    margin: auto;
+    max-width: 500px;
+    border-radius: 7px;
+}
+
+#description-donation .form input {
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid rgb(236, 236, 236);
+    padding: 8px 0px;
+    transition: all 0.1s;
+    padding-left: 40px;
+}
+
+#description-donation .fas-input {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 30%;
+    left: 10px;
+    pointer-events: none;
+    color: grey;
+    z-index: 1000;
+}
+
+#description-donation .focus-input100 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+#description-donation .focus-input100::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    background: #346EA7;
+    z-index: 100;
+}
+
+#description-donation .my-input:focus+.focus-input100::before {
+    width: 100%;
+}
+
+#description-donation .has-val.my-input+.focus-input100::before {
+    width: 100%;
+}
+
+#description-donation .my-flex {
+    display: flex;
+}
+
+#description-donation .my-button {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px 18px;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+@media(max-width:400px) {
+    #description-donation .my-button {
+        width: 100%;
+    }
+    #description-donation .my-flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#description-donation .my-button:hover {
+    color: #000;
+}
+
+#description-donation .sticky-top {
+    top: 250px;
+}
+
+
+/* ==================== DONATİON DETAİL PAGE END ==================== */
+
+
+/* BAŞLANGIÇ */
+
+.ortak .content {
+    margin: 0;
+    margin-top: -12%;
+}
+
+.ortak .content .section-1 {
+    padding: 0;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.ortak .content .section-1 img {
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+}
+
+.ortak .text-justify {
+    text-align: justify;
+    font-size: 20px;
+    float: left;
+    padding: 35px;
+}
+
+.ortak .owl-carousel-six {
+    position: relative;
+}
+
+.ortak .owl-carousel-six .owl-nav {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ortak .owl-carousel-six .owl-nav .owl-prev {
+    position: absolute;
+    left: 0;
+    display: block;
+    background: #346EA7 !important;
+    color: white !important;
+    font-size: 25px;
+    padding: 16px !important;
+    display: block;
+    margin: 0;
+    transition: 0.5;
+    border-radius: 0%;
+}
+
+.ortak .owl-carousel-six .owl-nav .owl-prev:hover {
+    background: #fff !important;
+    color: #346EA7 !important;
+}
+
+.ortak .owl-carousel-six .owl-nav .owl-next {
+    position: absolute;
+    right: 0;
+    display: block;
+    background: #346EA7 !important;
+    color: white !important;
+    font-size: 25px;
+    padding: 16px !important;
+    display: block;
+    margin: 0;
+    transition: 0.5;
+    border-radius: 0%;
+}
+
+.ortak .owl-carousel-six .owl-nav .owl-next:hover {
+    background: #fff !important;
+    color: #346EA7 !important;
+}
+
+@media(max-width:1200px) {
+    .ortak .content .section-1 img {
+        width: 100%;
+        object-fit: cover;
+        height: auto;
+    }
+}
+
+@media(max-width:576px) {
+    .ortak .text-justify {
+        padding: 15px;
+    }
+}
+
+.ortak .form {
+    width: 100%;
+    margin-top: 100px;
+    border-radius: 7px;
+    padding: 32px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.ortak .form input {
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid rgb(236, 236, 236);
+    padding: 8px 0px;
+    transition: all 0.1s;
+    padding-left: 40px;
+}
+
+.ortak .fas-input {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 30%;
+    left: 10px;
+    pointer-events: none;
+    color: grey;
+    z-index: 1000;
+}
+
+.ortak .focus-input100 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.ortak .focus-input100::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    background: #346EA7;
+    z-index: 100;
+}
+
+.ortak .my-input:focus+.focus-input100::before {
+    width: 100%;
+}
+
+.ortak .has-val.my-input+.focus-input100::before {
+    width: 100%;
+}
+
+.ortak .my-flex {
+    display: flex;
+}
+
+.ortak .my-button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 18px;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+@media(max-width:400px) {
+    .ortak .my-button {
+        width: 100%;
+    }
+    .ortak .my-flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.ortak .my-button:hover {
+    color: #000;
+}
+
+.ortak .category {
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 20px -6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+    min-height: 500px;
+}
+
+.ortak .category a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 13px;
+}
+
+.ortak .category a:hover {
+    text-decoration: underline;
+}
+
+.ortak .category a i {
+    font-size: 17px;
+    color: #346EA7;
+}
+
+.ortak .social-media {
+    margin: auto;
+    width: 100%;
+    height: 1000px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow-y: scroll;
+}
+
+@media(max-width:768px) {
+    .ortak .category {
+        margin: auto;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .ortak .content {
+        margin: auto;
+        margin-top: -12%;
+        width: 90%;
+    }
+}
+
+.ortak .category * {
+    box-sizing: border-box;
+}
+
+.ortak .category h3 {
+    padding: 0.5em 0;
+    position: relative;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+}
+
+.ortak .category h3:before,
+.ortak .category h3:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.ortak .category h3:before {
+    bottom: 0;
+    display: block;
+    height: 3px;
+    width: 0%;
+    content: "";
+    background-color: #2980b9;
+}
+
+.ortak .category h3:after {
+    left: 0;
+    top: 0;
+    padding: 0.5em 0;
+    position: absolute;
+    content: attr(data-hover);
+    color: #ffffff;
+    white-space: nowrap;
+    max-width: 0%;
+    overflow: hidden;
+}
+
+.ortak .category h3:before {
+    opacity: 1;
+    width: 50%;
+}
+
+.ortak .category h3:after {
+    max-width: 50%;
+}
+
+.ortak .category:hover h3:before {
+    opacity: 1;
+    width: 100%;
+}
+
+.ortak .category:hover h3:after {
+    max-width: 100%;
+}
+
+.ortak .faaliyet-content {
+    background: #fff;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.ortak .faaliyet-content:nth-child(1) {
+    padding: 0%;
+    background: #fff;
+    margin-top: 0px;
+}
+
+.ortak .faaliyet-text {
+    padding: 20px 25px;
+    display: grid;
+    gap: 15px;
+}
+
+.ortak .faaliyet-text a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+
+.ortak .faaliyet-text a:hover {
+    color: #346EA7;
+}
+
+.ortak .faaliyet-text .date {
+    font-weight: 700;
+}
+
+.ortak .faaliyet-text .text {
+    max-height: 50px;
+    overflow: hidden;
+}
+
+.ortak .faaliyet-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.ortak .left-shadow {
+    box-shadow: 0 0 20px -6px rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width:768px) {
+    .ortak .faaliyet-content {
+        margin: 20px;
+    }
+    .ortak .faaliyet-text {
+        padding: 15px 15px;
+        display: grid;
+        gap: 15px;
+    }
+    .ortak .faaliyet-img img {
+        width: 100%;
+        height: auto;
+        max-height: 350px !important;
+        object-fit: cover;
+    }
+}
+
+
+/* BİTİŞ */
+
+
+/* ==================== 2 GENÇ TİCARET KÖPRÜSÜ PROJESİ EĞİTİMLERİ DEVAM EDİYOR SAYFASI BAŞLANGIÇ ==================== */
+
+.parallax-genc-ticaret-devam {
+    overflow: hidden;
+    background: #000;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(http://bursaipekyolu.org/wp-content/uploads/2022/01/WhatsApp-Image-2022-01-11-at-12.38.34-3.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content {
+    padding: 20% 0;
+}
+
+
+/* ==================== 2 GENÇ TİCARET KÖPRÜSÜ PROJESİ EĞİTİMLERİ DEVAM EDİYOR SAYFASI BİTİŞ ==================== */
+
+
+/* ==================== GENC TİCARET KOPRUSU PROJESİNDE IMZALAR ATILDI SAYFASI BAŞLANGIÇ ==================== */
+
+.parallax-genc-ticaret-imza {
+    overflow: hidden;
+    background: #000;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(http://bursaipekyolu.org/wp-content/uploads/2022/01/WhatsApp-Image-2022-01-11-at-12.38.34-3.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content {
+    padding: 20% 0;
+}
+
+
+/* ==================== GENÇ TİCARET KOPRÜSÜ PROJESİNDE İMZALAR ATILDI SAYFASI BİTİŞ ==================== */
+
+
+/* ==================== BURSA MÜZE GEZİLERİMİZ 8500 YILLIK AKTOPRAKLIK’TA SONA ERDİ SAYFASI BAŞLANGIÇ ==================== */
+
+.parallax-bursa-müze {
+    overflow: hidden;
+    background: #000;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(http://bursaipekyolu.org/wp-content/uploads/2022/01/IMG_8274-scaled.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content {
+    padding: 20% 0;
+}
+
+
+/* ==================== BURSA MÜZE GEZİLERİMİZ 8500 YILLIK AKTOPRAKLIK’TA SONA ERDİ SAYFASI BİTİŞ ==================== */
+
+
+/* ==================== TEMEL AFET BİLİNCİ EĞİTİMİ BAŞLIYOR! SAYFASI BAŞLANGIÇ ==================== */
+
+.parallax-temel-afet {
+    overflow: hidden;
+    background: #000;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(http://bursaipekyolu.org/wp-content/uploads/2022/01/Temel-Afet-Bilinci-E%C4%9Fitimi.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content {
+    padding: 20% 0;
+}
+
+
+/* ==================== TEMEL AFET BİLİNCİ EĞİTİMİ BAŞLIYOR! SAYFASI BİTİŞ ==================== */
+
+
+/* ==================== Kadın ve Demokrasi Derneği (KADEM) Bursa İl Temsilcisi Gülhan Zehra Keskil ve Hanım Komisyonu derneğimize ziyaret gerçekleştirdiler SAYFASI BAŞLANGIÇ ==================== */
+
+.parallax-kadin-ve-demokrasi {
+    overflow: hidden;
+    background: #000;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(http://bursaipekyolu.org/wp-content/uploads/2022/01/WhatsApp-Image-2022-01-05-at-17.41.02-1.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content {
+    padding: 20% 0;
+}
+
+
+/* ==================== TEMEL AFET BİLİNCİ EĞİTİMİ BAŞLIYOR! SAYFASI BİTİŞ ==================== */
+
+
+/* ==================== Kadın ve Demokrasi Derneği (KADEM) Bursa İl Temsilcisi Gülhan Zehra Keskil ve Hanım Komisyonu derneğimize ziyaret gerçekleştirdiler SAYFASI BAŞLANGIÇ ==================== */
+
+.parallax-kadin-ve-demokrasi {
+    overflow: hidden;
+    background: #000;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(http://bursaipekyolu.org/wp-content/uploads/2022/01/WhatsApp-Image-2022-01-05-at-17.41.02-1.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content {
+    padding: 20% 0;
+}
+
+
+/* ==================== TEMEL AFET BİLİNCİ EĞİTİMİ BAŞLIYOR! SAYFASI BİTİŞ ==================== */
+
+
+/* ==================== Bursa Teknik Üniversitesi Bursa Teknoloji Transfer Ofisi Girişimcilik Koordinatörü Öğretim Görevlisi Fatma Saime Erdönmez’e ziyaret gerçekleştirdik SAYFASI BAŞLANGIÇ ==================== */
+
+.parallax-bursa-teknik-universitesi {
+    overflow: hidden;
+    background: #000;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(http://bursaipekyolu.org/wp-content/uploads/2022/01/WhatsApp-Image-2022-01-05-at-11.27.34.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content {
+    padding: 20% 0;
+}
+
+
+/* ==================== Bursa Teknik Üniversitesi Bursa Teknoloji Transfer Ofisi Girişimcilik Koordinatörü Öğretim Görevlisi Fatma Saime Erdönmez’e ziyaret gerçekleştirdik SAYFASI BİTİŞ ==================== */
+
+
+/* ==================== UDEF 9. BÖLGE TOPLANTISINA EV SAHİPLİĞİ YAPTIK SAYFASI BAŞLANGIÇ ==================== */
+
+.parallax-udef-bölge-toplantisi {
+    overflow: hidden;
+    background: #000;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(http://bursaipekyolu.org/wp-content/uploads/2022/01/WhatsApp-Image-2022-01-06-at-15.10.41.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content {
+    padding: 20% 0;
+}
+
+
+/* ==================== UDEF 9. BÖLGE TOPLANTISINA EV SAHİPLİĞİ YAPTIK SAYFASI BİTİŞ ==================== */
+
+
+/* ==================== Ülke Buluşmaları – MOĞOLİSTAN SAYFASI BAŞLANGIÇ ==================== */
+
+.parallax-ülke-bulusmalari-mmogolistan {
+    overflow: hidden;
+    background: #000;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(http://bursaipekyolu.org/wp-content/uploads/2022/01/WhatsApp-Image-2022-01-04-at-16.37.02.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content {
+    padding: 20% 0;
+}
+
+
+/* ==================== Ülke Buluşmaları – MOĞOLİSTAN SAYFASI BİTİŞ ==================== */
+
+
+/* ==================== AKADEMİK ARAŞTIRMA YÖNTEM VE TEKNİKLERİ EĞİTİM PROGRAMI BAŞLIYOR! SAYFASI BAŞLANGIÇ ==================== */
+
+.parallax-akademik-arastirma {
+    overflow: hidden;
+    background: #000;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(http://bursaipekyolu.org/wp-content/uploads/2022/01/WhatsApp-Image-2022-01-05-at-16.23.39.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content {
+    padding: 20% 0;
+}
+
+
+/* ==================== AKADEMİK ARAŞTIRMA YÖNTEM VE TEKNİKLERİ EĞİTİM PROGRAMI BAŞLIYOR! SAYFASI BİTİŞ ==================== */
+
+
+/* ==================== EVLİ HANIM MİSAFİR ÖĞRENCİLERİMİZLE BULUŞTUK SAYFASI BAŞLANGIÇ ==================== */
+
+.parallax-misafir-ogrencilerimiz {
+    overflow: hidden;
+    background: #000;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(http://bursaipekyolu.org/wp-content/uploads/2022/01/WhatsApp-Image-2022-01-04-at-11.14.57-4.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content {
+    padding: 20% 0;
+}
+
+
+/* ==================== EVLİ HANIM MİSAFİR ÖĞRENCİLERİMİZLE BULUŞTUK SAYFASI BİTİŞ ==================== */
+
+
+/* ==================== Milliyetçi Hareket Partisi Osmangazi İlçe Teşkilatı Yönetim Kurulu derneğimize ziyaret gerçekleştirdiler SAYFASI BAŞLANGIÇ ==================== */
+
+.parallax-mhp-teşkilat-ziyareti {
+    overflow: hidden;
+    background: #000;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(http://bursaipekyolu.org/wp-content/uploads/2022/01/271284506_5076923889007311_1461176542865353859_n.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content {
+    padding: 20% 0;
+}
+
+
+/* ==================== Milliyetçi Hareket Partisi Osmangazi İlçe Teşkilatı Yönetim Kurulu derneğimize ziyaret gerçekleştirdiler SAYFASI BİTİŞ ==================== */
+
+
+/* ==================== KARİYER İNŞASI EĞİTİMİ FİNAL PROGRAMI SAYFASI BAŞLANGIÇ ==================== */
+
+.parallax-kariyer-inşasi {
+    overflow: hidden;
+    background: #000;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(http://bursaipekyolu.org/wp-content/uploads/2022/01/1-1-2048x1365.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content {
+    padding: 20% 0;
+}
+
+
+/* ==================== KARİYER İNŞASI EĞİTİMİ FİNAL PROGRAMI SAYFASI BİTİŞ ==================== */
+
+
+/* ==================== PARALLAX ABOUT-US START ==================== */
+
+.parallax-about-us {
+    overflow: hidden;
+    background: #000;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(http://bursaipekyolu.org/wp-content/uploads/2022/01/1-1-2048x1365.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content {
+    padding: 20% 0;
+}
+
+
+/* ==================== PARALLAX ABOUT-US END ==================== */
