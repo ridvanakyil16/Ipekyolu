@@ -11,9 +11,7 @@
 </p>
 
 <p align="center"> 
-<span>
-<img src="https://am4pap001files.storage.live.com/y4mBAlm0GPBYrVutu-65xjv8Y6_KPIPilwGOJ_SBbjdvwvVVBuFtNpoYRhRB-aA1x-AZV8lRZgFyHFLpZuRlld8ifBmXD_Zd2iSPM6pZq0lgfeC-jFfWuKEkP5UHC_Sk2Md_U-o06aGeqmwg3AxLyjrMDdVWtLOsTf8t9y15KceuRFqCRpY9mNnPUbfWkdWDIZvs6PUpLMofCblCWaF4VvB7CZmYqu0NQ83CCjPvKKoGNo?encodeFailures=1&width=1000&height=1000" width="40%" height="auto">
-</span>
-<span>
-<img src="https://am4pap001files.storage.live.com/y4mmgduHjZC7y1xFObrusJieruaO5847AqWjgEMeRrpHbEfA2Hkc65gQhTHGDeN0v9JtdHqSxdxr-Pf_fCHaovngoIDyf6tbaDmwUoYdyKagbpC70xtX0-JAtEluW2lxRqt3IFedNMHoRfDpE5OnTxH3w79_YhHCoQsEPtPWfhWQ9LzZFDH5pHsVjSMPGx1ijQv5YHlLsr_TIzqsWhxdhYQ5Ow5csecPnTMnb5IEqxr1EU?encodeFailures=1&width=1000&height=1000" width="40%" height="auto">
-</span> </p>
+<img src="https://am4pap001files.storage.live.com/y4mBAlm0GPBYrVutu-65xjv8Y6_KPIPilwGOJ_SBbjdvwvVVBuFtNpoYRhRB-aA1x-AZV8lRZgFyHFLpZuRlld8ifBmXD_Zd2iSPM6pZq0lgfeC-jFfWuKEkP5UHC_Sk2Md_U-o06aGeqmwg3AxLyjrMDdVWtLOsTf8t9y15KceuRFqCRpY9mNnPUbfWkdWDIZvs6PUpLMofCblCWaF4VvB7CZmYqu0NQ83CCjPvKKoGNo?encodeFailures=1&width=1000&height=1000" width="80%" height="auto"> </p>
+
+<p align="center"> 
+<img src="https://am4pap001files.storage.live.com/y4mmgduHjZC7y1xFObrusJieruaO5847AqWjgEMeRrpHbEfA2Hkc65gQhTHGDeN0v9JtdHqSxdxr-Pf_fCHaovngoIDyf6tbaDmwUoYdyKagbpC70xtX0-JAtEluW2lxRqt3IFedNMHoRfDpE5OnTxH3w79_YhHCoQsEPtPWfhWQ9LzZFDH5pHsVjSMPGx1ijQv5YHlLsr_TIzqsWhxdhYQ5Ow5csecPnTMnb5IEqxr1EU?encodeFailures=1&width=1000&height=1000" width="80%" height="auto"> </p>
